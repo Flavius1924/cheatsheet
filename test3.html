@@ -1,0 +1,648 @@
+<html>
+<style type="text/css">
+body{
+	background-color: #FFFFFF;
+}
+table.tb{
+	width: 960px;
+	height: 100%;
+	border: 0;
+}
+table.cheatsheet, td, th{
+	border: 0 solid #005573;
+	border-collapse: collapse;
+	font-size:14px;
+	font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,Arial,Helvetica,sans-serif;
+	vertical-align: top;
+}
+tr.alt{
+	background-color: F7F7F7;
+}
+th{
+	background-color: #488AC7;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	height: 30px !important;
+	vertical-align: middle;
+	font-weight: bold;
+}
+table.cheatsheet tr:hover {
+   background: #E8E8E8 !important;
+}
+table.cheatsheet{
+	width: 350px;
+}
+td.order{
+	padding-bottom:10px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+span.sorder{
+	padding-left: 20px;
+	font-weight: normal;
+}
+td.ordera{
+	padding-bottom:10px;
+	font-weight: bold;
+}
+</style>
+<body>
+	<img src="http://www.bigcommerce.com/images/logo.png">
+<!--nu uita sa stergi-->	<title> ORIGINAL </title>
+<table  class="tb">
+	<tr>
+	<td>
+	<table class="cheatsheet">
+		<tr>
+			<th colspan="3" ><center>Affiliate Variables</center></th>
+		</tr>
+	<tr  class="alt" >
+		<td colspan="2" class="order">%%ORDER_AMOUNT%%<br/><span class="sorder">The order total in dollars/cents.</span></td>
+	</tr>
+	<tr >
+		<td colspan="2" class="ordera">%%ORDER_AMOUNT_IN_CENTS%%<br/><span class="sorder">The order total in cents </span></td>
+	</tr>
+	<tr  class="alt">
+		<td colspan="2" class="ordera">%%ORDER_SUBTOTAL%%<br/><span class="sorder">The order subtotal in dollars/cents.</span></td>
+	</tr>
+	<tr>
+		<td colspan="2" class="ordera">%%ORDER_SUBTOTAL_IN_CENTS%%</br><span class="sorder">The order subtotal in cents </span></td>
+	</tr>
+	<tr  class="alt" >
+		<td colspan="2" class="ordera">%%ORDER_SUBTOTAL_DISCOUNTED%%</br><span class="sorder">The order subtotal minus coupon and other discount amounts </span></td>
+	</tr>
+	<tr >
+		<td colspan="2" class="ordera">%%ORDER_SUBTOTAL_DISCOUNTED_<br />_IN_CENTS%%</br><span class="sorder">The order subtotal minus coupon and other discount amounts, in cents</span></td>
+	</tr>
+	<tr  class="alt" >
+		<td colspan="2" class="ordera">%%ORDER_ID%%</br><span class="sorder"> The order ID</span></td>
+	</tr>
+</table>
+<br/>
+
+<table class="cheatsheet">
+<tr>
+ <th colspan="3">Store Wide Global Variables</th>
+</tr>
+<tr >
+<td colspan="2" style="padding-bottom:10px; padding-top:2px"><b>%%GLOBAL_StoreName%% </b></br>
+<span style="padding-left:20px; ">The name of the store<br /></span></td>
+
+
+</tr>
+
+<tr class="alt">
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_ShopPath%%</b></br>
+<span style="padding-left:20px">The full URL to the store without a trailing slash. If on
+an SSL based page, this will be the HTTPS version of the store path.</span></td>
+</tr>
+
+<tr>
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_AppPath%%</b><br />
+<span style="padding-left:20px">
+The path to the store (full URL without the domain)
+including a trailing slash.</span></td>
+
+</tr>
+
+<tr class="alt">
+<td colspan="2" style="padding-bottom:10px;"> <b>%%GLOBAL_ShopPathNormal%% </b><br />
+<span style="padding-left:20px">The normal (non SSL) version of the store URL
+The path to the store (full URL without the domain)
+including a trailing slash.</span></td>
+
+</tr>
+<tr>
+<td colspan="2" style="padding-bottom:10px;"> <b>%%GLOBAL_ShopPathSSL%%</b><br />
+<span style="padding-left:20px">The SSL version of the store URL.</span></td>
+
+</tr>
+<tr class="alt">
+<td colspan="2" style="padding-bottom:10px;"> <b>%%GLOBAL_StoreAddress%%</b><br />
+<span style="padding-left:20px"> The address of the store (as configured on the
+store settings page)</span></td>
+
+</tr>
+<tr>
+<td colspan="2" style="padding-bottom:10px;"> <b>%%GLOBAL_AdminEmail%%</b><br />
+<span style="padding-left:20px"> The email address of the store administrator.</span></td>
+</tr>
+<tr class="alt">
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_CurrentCustomerFirstName%%</b><br />
+<span style="padding-left:20px">The first name of the currently
+logged in customer. For guests, this is set to “Guest”.</span></td>
+</tr>
+<tr>
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_CurrentCustomerLastName%%</b><br />
+<span style="padding-left:20px">The last name of the currently
+logged in customer.</span></td>
+</tr>
+<tr class="alt">
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_CurrentCustomerEmail%%</b><br />
+<span style="padding-left:20px">The email address of the currently
+logged in customer.</span></td>
+</tr>
+<tr>
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_SiteColor%%</b><br />
+<span style="padding-left:20px">The current template’s active color scheme.</span></td>
+</tr>
+<tr class="alt">
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_template%%</b><br />
+<span style="padding-left:20px">The current template name.</span></td>
+</tr>
+<tr>
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_StoreLogo%%</b><br />
+<span style="padding-left:20px">The store logo (image or "h1" text logo)</span></td>
+</tr>
+<tr class="alt">
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_DownloadDirectory%%</b><br />
+<span style="padding-left:20px">The name of the product downloads
+directory.</span></td>
+</tr>
+<tr>
+<td colspan="2" style="padding-bottom:10px;"><b>%%GLOBAL_ImageDirectory%%</b><br />
+<span style="padding-left:20px">The name of the product images directory.</span></td>
+</tr>
+
+<tr class="alt">
+<td colspan="2" style="padding-bottom:6px;"><b>%%GLOBAL_CartItems%%</b></br>
+<span style="padding-left:20px">A textual string representing the number of items in
+the cart (1 item, 2 items etc)</span></td>
+</tr>
+</table>
+<br />
+
+
+</td>
+
+<!----------------------second table ----------------------------->
+<td>
+
+
+<table class="cheatsheet" width="375px">
+<tr>
+ <th colspan="3">Email Templates</th>
+</tr>
+<tr>
+<td style="width:200px; padding-bottom:4px; padding-top:5px">Create account email</td>
+<td style="width:160px; padding-top:5px">createaccount_email.html </td>
+</tr>
+<tr class="alt">
+<td style="width:200px ;padding-bottom:4px;">Gift Certificate Received email</td>
+<td style="width:160px">giftcertificate_email.html </td>
+
+</tr>
+<tr>
+<td style="width:200px ;padding-bottom:4px;">Thank you for your order email</td>
+<td style="width:160px">invoice_email.html</td>
+
+
+</tr>
+<tr class="alt">
+<td style="width:200px ;padding-bottom:4px;">Low Inventory Warning email</td>
+<td style="width:160px">low_inventory_email.html </td>
+
+</tr>
+<tr>
+<td style="width:190px ;padding-bottom:4px;">Downloadable items order status email </td>
+<td style="width:160px">order_status_downloads_email.html </td>
+
+</tr>
+<tr class="alt">
+<td style="width:190px ;padding-bottom:5px;">Order status email</td>
+<td style="width:160px">order_status_email.html </td>
+
+</tr>
+<tr >
+<td style="width:190px ;padding-bottom:5px;">Order placed notification </td>
+<td style="width:160px">ordermessage_notification.html </td>
+</tr>
+<tr class="alt">
+<td style="width:190px ;padding-bottom:5px;">Contact Us form submitted</td>
+<td style="width:160px">page_contact_email.html </td>
+</tr>
+<tr >
+<td style="width:190px ;padding-bottom:5px;">Notification confirmation for returned item</td>
+<td style="width:160px">return_confirmation_email.html</td>
+</tr>
+<tr class="alt">
+<td style="width:190px ;padding-bottom:5px;">Return request notification email</td>
+<td style="width:160px">return_notification_email.html</td>
+</tr>
+<tr >
+<td style="width:190px ;padding-bottom:4px;">Status of return changed email</td>
+<td style="width:160px">return_statuschange_email.html </td>
+</tr>
+<tr class="alt">
+<td style="width:190px ;padding-bottom:4px;">Vendor payment email</td>
+<td style="width:160px">vendor_payment.html</td>
+</tr>
+
+
+</table>
+<br/>
+<!-------------------------------------------------------------------------->
+<table class="cheatsheet" width="375px">
+<tr>
+ <th colspan="3">Products Per Panel</th>
+</tr>
+<tr class="alt">
+<td style="width:200px; padding-bottom:3px;padding-top:5px ">Featured Products Panel</td>
+<td style="width:160px; padding-top:5px; padding-bottom:3px;">Custom set up </td>
+</tr>
+<tr >
+<td style="width:200px ;padding-bottom:3px;">New Products Panel</td>
+<td style="width:160px">Custom set up </td>
+
+</tr>
+<tr class="alt">
+<td style="width:180px ;padding-bottom:3px;">Recent News Items Panel</td>
+<td style="width:195px">Custom set up</td>
+
+
+</tr>
+
+<tr >
+<td style="width:180px ;padding-bottom:3px;">Similar Products By Customer Views Panel</td>
+<td style="width:195px">Custom set up</td>
+</tr>
+<tr class="alt">
+<td style="width:180px ;padding-bottom:3px;">Related Products Panel</td>
+<td style="width:195px; padding-bottom:3px;">Up to 5 products </td>
+
+</tr >
+<tr >
+<td style="width:180px ;padding-bottom:3px;">Recently Viewed Panel</td>
+<td style="width:195px;padding-bottom:3px;">Up to 5 products (system based) <td>
+</tr>
+<tr  class="alt">
+<td style="width:180px ;padding-bottom:3px;">Side New Products Panel</td>
+<td style="width:195px ; padding-bottom:3px;">Up to 5 products (system based)</td>
+</tr>
+<tr >
+<td style="width:180px ;padding-bottom:3px;">Side Top Sellers Panel</td>
+<td style="width:195px ; padding-bottom:3px;">Up to 5 products (system based)</td>
+</tr>
+<tr class="alt">
+<td style="width:180px ;padding-bottom:3px;">Side Popular Products Panel</td>
+<td style="width:195px ; padding-bottom:3px;">Up to 5 products (system based)</td>
+</tr>
+
+
+
+
+</table>
+<br />
+<!---------------------------------------------------------------->
+<table class="cheatsheet" width="375px">
+<tr>
+ <th colspan="3">Editing Express Checkout</th>
+</tr>
+<tr>
+<td style="width:180; padding-bottom:6px; padding-top:5px ">Step 1: Account Details </td>
+<td style="width:200px; padding-top:6px">checkout_express.html </td>
+</tr>
+<tr class="alt">
+<td style="width:180px ;padding-bottom:6px;">Step 2: Billing Details</td>
+<td style="width:200px; padding-bottom:6px;">ExpressCheckoutChooseAddress.html
+<br/>checkout_express.html  </td>
+
+</tr>
+<tr>
+<td style="width:180px ;padding-bottom:6px;">Step 4: Shipping Method </td>
+<td style="width:200px; padding-bottom:6px;">ExpressCheckoutChooseShipper.html
+ <br />  ExpressCheckoutShippingMethod.html<br />checkout_express.html </td>
+
+
+</tr>
+<tr class="alt">
+<td style="width:180px ;padding-bottom:6px;">Step 5: Order Confirmation </td>
+<td style="width:200px; padding-bottom:6px">ExpressCheckoutConfirmation.html <br /> checkout_express.html </td>
+
+</tr>
+</table>
+<br />
+<!--<table class="cheatsheet" width="375px">
+<tr>
+ <th colspan="3">Side Panels and Main Template Files</th>
+</tr>
+<tr >
+<td style="width:180;  vertical-align:middle;">Common side panels</td>
+<td style="width:200px; padding-bottom:3px; padding-top:2px ">
+			%%Panel.SideBrandTagCloud%%
+			%%Panel.SideCartContents%%
+			%%Panel.SideCategoryList%%
+            %%Panel.SideCurrencySelector%%
+			%%Panel.SideLiveChatServices%%
+			%%Panel.SideNewProducts%%
+			%%Panel.SideNewsletterBox%%
+			%%Panel.SidePopularProducts%%
+			%%Panel.SidePopularVendors%%
+            %%Panel.SideShopByBrand%%
+            %%Panel.SideTopSellers%%
+            
+            	
+			
+	        
+				
+		</td>
+</tr>
+<tr class="alt">
+<td style="width:180px ; vertical-align:middle;">page.html</td>
+<td style="width:200px; padding-bottom:3px; padding-top:2px">%%Panel.SideSubPageList%%
+
+            </td>
+
+</tr>
+<tr >
+<td style="width:180px ; vertical-align:middle;">product.html </td>
+<td style="width:200px; padding-bottom:3px; padding-top:2px">%%Panel.SideProductAddToWishList%%
+				%%Panel.SideProductAlsoBought%%
+				%%Panel.SideProductRecentlyViewed%%
+				%%Panel.SideProductRelated
+				%%Panel.SimilarProductsByCustomerViews%%
+				%%Panel.SimilarProductsByTag%%
+            </td>
+
+
+</tr>
+
+<tr class="alt">
+<td style="width:180px ; vertical-align:middle;">cart.html </td>
+<td style="width:200px; padding-bottom:3px; padding-top:2px">%%Panel.SideCouponCodeBox%%
+            %%Panel.SideGiftCertificateCodeBox%%
+            %%Panel.SideProductRecentlyViewed%%
+            </td>
+
+</tr>
+<tr >
+<td style="width:180px ;vertical-align:middle;">account.html </td>
+<td style="width:200px; padding-bottom:3px; padding-top:2px">
+			%%Panel.SideAccountMenu%%
+			%%Panel.SideAccountStoreCredit%%
+            </td>
+
+</tr>
+
+</table>  -->
+<table class="cheatsheet" width="375px"  >
+<tr >
+ <th colspan="3" ><b> <center>Useful Tips</center></b></th>
+</tr>
+<tr >
+<td  style="padding-bottom:10px; vertical-align:middle; padding-top:5px">Add more values to the quantity selector</td>
+<td style="padding-bottom:0px;vertical-align:middle; ">Snippets/CartItemQtySelect.html </td>
+</tr>
+<tr class="alt">
+<td  style="padding-bottom:10px;vertical-align:middle; padding-top:5px">Edit Invoice</td>
+<td style="padding-bottom:5px; "> invoice_print.html <br />Snippets/InvoiceCartItem.html<br /> Snippets/InvoiceCustomerDetails.html <br />Snippets/InvoicePendingPaymentDetails.html <br />Snippets/InvoicePendingPaymentNotice.html  </td>
+</tr>
+<tr    >
+<td  style="padding-bottom:10px; vertical-align:middle; padding-top:5px">Edit Packing Slip</td>
+<td style="padding-bottom:0px;vertical-align:middle; ">packing_slip_print.html</td>
+</tr>
+<tr    class="alt">
+<td style="padding-bottom:10px; vertical-align:middle;padding-top:5px">Edit Add to Cart Pop-up</td>
+<td style="padding-bottom:0px;vertical-align:middle; ">Snippets/FastCartThickBoxContent.html</td>
+</tr>
+<tr    >
+<td  style="padding-bottom:10px; vertical-align:middle;padding-top:5px">Edit Product Image Pop-up</td>
+<td style="padding-bottom:0px;vertical-align:middle; ">Panels/ProductImagePopup.html</td>
+</tr>
+<tr  class="alt">
+<td  style="padding-bottom:10px; padding-top:5px">Add Header Image</td>
+<td style="padding-bottom:5px;vertical-align:middle; ">Panels/HTMLHead.html <br /> (templates that do  not have a header image) </td>
+</tr>
+</table>
+
+
+</td>
+
+<!----------------------third table ----------------------------->
+<td>
+
+<table class="cheatsheet" width="330px">
+<tr>
+ <th colspan="3">Store Pages and Template Files</th>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px; padding-top:2px">Access Forbidden</td>
+<td style="padding-left:15px; padding-top:2px">403.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Page Not Found</td>
+<td style="padding-left:15px">404.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Account.php</td>
+<td style="padding-left:15px">account.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Account Address Book</td>
+<td style="padding-left:15px">account_addressbook.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Account View Messages</td>
+<td style="padding-left:15px">account_inbox.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Account Completed Orders</td>
+<td style="padding-left:15px">account_orders.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Account Order Status</td>
+<td style="padding-left:15px">account_orderstatus.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Account Recent Items page</td>
+<td style="padding-left:15px">account_recentitems.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Account Returns page</td>
+<td style="padding-left:15px">account_returns.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:1px;">Account Return Request Submitted </td>
+<td style="padding-left:15px">account_saved_return.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Brands page</td>
+<td style="padding-left:15px">brands.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Cart.php </td>
+<td style="padding-left:15px">cart.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Category page </td>
+<td style="padding-left:15px">category.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:1px;">Checkout.php (multiple page checkout)</td>
+<td style="padding-left:15px">checkout.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:1px;">Checkout Choose Address</td>
+<td style="padding-left:15px">checkout_address.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Checkout Confirm Order</td>
+<td style="padding-left:15px">checkout_confirm.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:1px;">Checkout.php (single page express checkout)</td>
+<td style="padding-left:15px">checkout_express.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:1px;">Checkout Pay For Your Order</td>
+<td style="padding-left:15px">checkout_payment.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:1px;">Checkout Choose Shipping Method</td>
+<td style="padding-left:15px">checkout_shipper.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Compare page</td>
+<td style="padding-left:15px">compare.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Create Account page</td>
+<td style="padding-left:15px">createaccount.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Create Account Thank You page</td>
+<td style="padding-left:15px">createaccount_thanks.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Home page</td>
+<td style="padding-left:15px">default.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Edit Account Details page</td>
+<td style="padding-left:15px">editaccount.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Something Went Wrong page</td>
+<td style="padding-left:15px">error.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Forgot Your Password page</td>
+<td style="padding-left:15px">forgotpassword.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Giftcertificates.php</td>
+<td style="padding-left:15px">giftcertificates.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Giftcertificates Balance page</td>
+<td style="padding-left:15px">giftcertificates_balance.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Redeem Gift Certificates page</td>
+<td style="padding-left:15px">giftcertificates_redeem.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Printable Invoice </td>
+<td style="padding-left:15px">invoice_print.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Login.php</td>
+<td style="padding-left:15px">login.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Down For Maintenance page</td>
+<td style="padding-left:15px">maintenance.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Particular message to the user page </td>
+<td style="padding-left:15px">message.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">News page</td>
+<td style="padding-left:15px">news.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Subscribe To Newsletter</td>
+<td style="padding-left:15px">newsletter_subscribe.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Finishorder.php</td>
+<td style="padding-left:15px">order.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Print Packing Slip</td>
+<td style="padding-left:15px">packing_slip_print.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Custom Web Page</td>
+<td style="padding-left:15px">page.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Contact Us Form</td>
+<td style="padding-left:15px">page_contact_form.html</td>
+<tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Product page</td>
+<td style="padding-left:15px">product.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Product Reviews </td>
+<td style="padding-left:15px">product_comments.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Product Video page</td>
+<td style="padding-left:15px">product_video.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Product Image</td>
+<td style="padding-left:15px">productimage.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Search page</td>
+<td style="padding-left:15px">search.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Search Tips page</td>
+<td style="padding-left:15px">search_tips.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Shipping Address Form </td>
+<td style="padding-left:15px; vertical-align:middle;">shippingaddressform.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Sitemap page </td>
+<td style="padding-left:15px">sitemap.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Tags page</td>
+<td style="padding-left:15px">tags.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Vendor page</td>
+<td style="padding-left:15px">vendor_page.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Vendor Products page</td>
+<td style="padding-left:15px">vendor_products.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Vendor Profile page </td>
+<td style="padding-left:15px">vendor_profile.html</td>
+</tr>
+<tr >
+<td style="width:150px ;padding-bottom:2px;">Vendors List page </td>
+<td style="padding-left:15px">vendors.html</td>
+</tr>
+<tr class="alt">
+<td style="width:150px ;padding-bottom:2px;">Wishlist page</td>
+<td style="padding-left:15px">wishlist.html</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>
